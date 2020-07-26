@@ -1,0 +1,1 @@
+tellraw @s [{"text":"Dimension Tags: ","color":"aqua"},{"text":"Enable ","color":"green","clickEvent":{"action":"run_command","value":"/scoreboard players set #dim_disabled se_data 0"}},{"text":"Disable","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set #dim_disabled se_data 1"}}]
