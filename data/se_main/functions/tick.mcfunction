@@ -18,7 +18,7 @@ scoreboard players operation #50players se_data /= #2 se_data
 execute as @a at @s store result score @s sleep run data get entity @s SleepTimer
 scoreboard players reset #playersInBed se_data
 execute as @a[scores={sleep=1..}] run scoreboard players add #playersInBed se_data 1
-execute if score #playersInBed se_data >= #50players se_data run weather clear
+execute if score #playersInBed se_data >= #50players se_data run weather clear 4800
 execute if score #playersInBed se_data >= #50players se_data run time add 250
 
 #player teleport
