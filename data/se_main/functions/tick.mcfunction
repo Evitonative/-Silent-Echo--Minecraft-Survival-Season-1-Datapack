@@ -26,3 +26,8 @@ scoreboard players reset @a[scores={linked_players=0}] linked_calc
 scoreboard players reset @a[scores={linked_players=0}] linked_players
 execute as @a[scores={linked_players=1..}] run scoreboard players operation @s linked_calc = @s linked_players
 execute as @r[scores={linked_players=1..},gamemode=spectator] at @s run function se_main:spec_tp
+
+#hrs
+execute as @a at @s run scoreboard players operation @s hrs_calc > @s hc_playTimeShow
+execute as @a at @s run scoreboard players operation @s hrs_calc /= #60 se_data
+execute as @a at @s run scoreboard players operation @s hrs > @s hrs_calc

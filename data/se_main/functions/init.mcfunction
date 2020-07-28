@@ -1,6 +1,10 @@
 scoreboard objectives add se_data dummy
 scoreboard players set #2 se_data 2
+scoreboard players set #60 se_data 60
 scoreboard objectives add sleep dummy
+scoreboard objectives add hrs_calc dummy "Spielstunden"
+scoreboard objectives add hrs dummy "Spielstunden"
+scoreboard objectives add hc_playTimeShow dummy
 
 scoreboard objectives add linked_players dummy
 scoreboard objectives add linked_calc dummy
